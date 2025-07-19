@@ -1,0 +1,196 @@
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  font-family: sans-serif;
+  background-color: #2C2C2C;
+  color: white;
+}
+
+/* === HOMEPAGE HERO === */
+.homepage-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('/background.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.homepage-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+  padding: 8rem 1rem 0 1rem;
+  max-width: 100%;
+}
+
+.hero-content h1 {
+  font-family:'Times New Roman', Times, serif ;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content button {
+  display: inline;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-content img{
+  height: 1rem;
+  padding-right: 1rem;
+}
+
+.hero-content button:hover {
+  color: black;
+  background-color: rgb(252, 252, 187);
+}
+
+.social-icon {
+  height: 1.5rem;
+}
+
+/* === INFO SECTION === */
+.info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-top {
+  background-color: beige;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+.info-item {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.info-item p, .info-item a{
+  color: black;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.info-item h3{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.7rem;
+}
+
+.info-bottom {
+  position: relative;
+  background: url('/background2.jpg') no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 8rem 2rem;
+}
+
+.info-overlay {
+  position: absolute;
+  display: flex;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.info-description {
+  z-index: 2;
+  color: #F0B205;
+  text-align: center;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.info-description h2 {
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 1rem;
+}
+
+.info-description p {
+  font-size: 1.1rem;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 500px) {
+  .homepage-container{
+    background: url('/smallbackground.PNG') center/cover no-repeat;
+    justify-content: end;
+  }
+
+  .hero-content{
+  padding: 3rem 1rem 5rem 1rem;
+  }
+  .hero-content h1 {
+  font-size: 3rem;
+  padding: 0 1rem;
+  background-color: #A19280;
+}
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-content button {
+    font-size: 0.9rem;
+  }
+
+  .info-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .info-item {
+    font-size: 1rem;
+    flex: 1 1 100%;
+  }
+
+  .info-description h2 {
+    font-size: 2rem;
+  }
+
+  .info-description p {
+    font-size: 1rem;
+  }
+}
+

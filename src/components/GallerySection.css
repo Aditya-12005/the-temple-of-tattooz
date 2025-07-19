@@ -1,0 +1,117 @@
+.gallery-section {
+  padding: 2rem 2rem;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.gallery-section h2 {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: linear-gradient(to right, #1e1e1e ,#1a1a1a );
+  text-shadow: 1px -1px 2px #F0B205;
+  border-radius: 10px;
+  margin: 0 2rem 2rem 0rem;
+  text-align: left;
+  padding-left: 2rem;
+
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  background: radial-gradient(circle at top left, #282828, #1a1a1a, #111);
+  background-size: 200% 200%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 3px rgba(255, 255, 255, 0.1);
+  gap: 1rem;
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.photo-grid.animate-background {
+  animation: cornerShift 12s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes cornerShift {
+  0% {
+    background-position: top left;
+  }
+  25% {
+    background-position: top right;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  75% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+.photo-card {
+  flex: 1 1 250px;
+  max-width: 250px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-card img:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(255, 217, 0,0.3) ;
+}
+
+.load-more-btn,
+.show-less-btn {
+  margin: 1rem auto 3rem;
+  display: block;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.load-more-btn {
+  background-color: beige;
+  color: black;
+}
+
+.load-more-btn:hover {
+  background-color: rgb(252, 252, 187);
+}
+
+.show-less-btn {
+  background-color: gray;
+  color: white;
+}
+
+.show-less-btn:hover {
+  background-color: #444;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-section h2 {
+    font-size: 2.3rem;
+    padding-left: 1rem;
+  }
+
+  .photo-grid{
+    padding-left: 2rem;
+  }
+}
