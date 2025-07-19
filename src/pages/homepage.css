@@ -156,6 +156,9 @@ html, body, #root {
     background: url('/smallbackground.jpg') center/cover no-repeat;
     justify-content: end;
   }
+  .info-bottom{
+    background: url('/smallbackground2.jpg') no-repeat center center / cover;
+  }
 
   .hero-content{
   padding: 3rem 1rem 5rem 1rem;
