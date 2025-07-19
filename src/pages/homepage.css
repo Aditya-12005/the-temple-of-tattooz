@@ -114,7 +114,7 @@ html, body, #root {
 
 .info-bottom {
   position: relative;
-  background: url('/background2.jpg') no-repeat fixed;
+  background: url('/background2.jpg') no-repeat center center / cover;
   display: flex;
   align-items: center;
   justify-content: center;
