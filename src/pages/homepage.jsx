@@ -7,7 +7,7 @@ import permanentTattoos from '../data/tattoos.js';
 import piercing from '../data/piercings.js';
 import smppmu from '../data/smppmu.js';  
 import tattooRemoving from '../data/tattooRemoving.js';    
-import Footer from '../components/footer.jsx';   
+import Footer from '../components/Footer.jsx';   
 
 const HomePage = () => {
   return (
