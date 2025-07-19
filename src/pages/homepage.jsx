@@ -16,8 +16,6 @@ const HomePage = () => {
       <div className="homepage-container">
         <div className="hero-content">
            <h1>The Temple Of Tattooz</h1>
-          {/*<p>Get It Done By Experts</p> */}
-          {/* <a href="tel:+918200646165"><button> <Phone  size={17} /> Book Now</button></a> */}
         </div>
       </div>
 
