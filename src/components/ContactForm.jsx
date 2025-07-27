@@ -49,6 +49,8 @@ const ContactForm = () => {
       });
 
       const result = await response.json();
+      console.log(response)
+
       if (result.success) {
         setStatus('Message sent successfully!');
         setFormData({
