@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="nav-links">
           <Link to="/team"></Link>
           <span className="dropdown-toggle" onClick={() => setShowDropdown(!showDropdown)}>
-            Book Now!
+            Contact Us
           </span>
           <a href="https://www.instagram.com/the_temple_of_tattooz/?hl=en"><img src="/instaIcon.svg" alt="Instagram" className='social-icon'/></a>
           <a href="https://www.facebook.com/TheTattooTemple1629/"><img src="/fbIcon.svg" alt="Facebook" className='social-icon'/></a>

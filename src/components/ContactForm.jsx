@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
 
-const ContactForm = () => {
+const ContactForm = ({ isPopup = false, onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -49,26 +49,24 @@ const ContactForm = () => {
       });
 
       const result = await response.json();
-      
+
       if (result.success) {
         setStatus('Message sent successfully!');
-        setFormData({
-          name: '',
-          phone: '',
-          location: '',
-          time: '',
-        });
+        setFormData({ name: '', phone: '', location: '', time: '' });
       } else {
         setStatus('Failed to send message.');
       }
     } catch (err) {
-      console.error("Error during form submission:", err);
+      console.error(err);
       setStatus('Something went wrong.');
     }
   };
 
   return (
-    <div className="contact-form-container">
+    <div className={isPopup ? 'popup-form' : 'contact-form-container'}>
+      {isPopup && (
+        <button className="close-btn" onClick={onClose}>×</button>
+      )}
       <h2>Book a Free Consultation</h2>
       <form onSubmit={handleSubmit}>
         <label>Name</label>

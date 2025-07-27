@@ -9,10 +9,12 @@ import smppmu from '../data/smppmu.js';
 import tattooRemoving from '../data/tattooRemoving.js';    
 import Footer from '../components/Footer.jsx';   
 import ContactForm from '../components/ContactForm';
+import ContactPopup from '../components/ContactPopup.jsx';
 
 const HomePage = () => {
   return (
     <>
+      <ContactPopup />
       {/* HERO SECTION */}
       <div className="homepage-container">
         <div className="hero-content">
