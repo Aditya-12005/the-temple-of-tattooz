@@ -35,7 +35,7 @@ html, body, #root {
   justify-content: center;
   margin: 0 auto;
   padding: 10rem 1rem 0 1rem;
-  max-width: 80%;
+  max-width: 100%;
   display: flex;             
   justify-content: center;  
   flex-wrap: wrap;
@@ -47,7 +47,7 @@ html, body, #root {
   margin-bottom: 2rem;
 }
 .hero-content h1 span{
-  background-image: linear-gradient(to right, #E3980A 10%, #F0B205);
+  background-image: linear-gradient(to right, #E3980A , #F0B205 10%);
   background-clip: text;
   color: transparent;
 }
@@ -170,12 +170,12 @@ html, body, #root {
   }
 
   .hero-content{
-  padding: 3rem 1rem 5rem 1rem;
+  padding: 3rem 1rem 3.5rem 1rem;
   }
   .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 0 1rem;
-  background-color: rgb(245, 245, 220,0.8);
+  background-color: rgb(245, 245, 220,0.9);
 }
 
   .hero-content p {
