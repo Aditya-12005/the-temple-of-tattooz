@@ -36,7 +36,7 @@ const HomePage = () => {
           <div className="info-description">
             <h2>Walk In Tattoos <br />+<br />Tattoos By Appointment</h2>
             <p>
-              The Temple of Tattoo is in the centre of Akota & the Best  place to get tattoos in Vadodara with 2 Branches in Akota and Jubelibaugh . <br />Being the best tattoo shop in Vadodara , we are well known for our ability to create one-of-a-kind, custom tattoo designs that fit your style. Our skilled and knowledgeable artists are committed to provide outstanding tattoo services, making sure that each work of art is painstakingly and precisely created. <br /><br /> <strong> In search of a "tattoo shop near me"? There's nowhere else to look.</strong>
+              The Temple of Tattoo is in the centre of Akota & the Best  place to get tattoos in Vadodara with 2 Branches in Akota and Jubelibaugh . <br />Being the best tattoo shop in Vadodara , we are well known for our ability to create one-of-a-kind, custom tattoo designs that fit your style. Our skilled and knowledgeable artists are committed to provide outstanding tattoo services, making sure that each work of art is painstakingly and precisely created. <br /><br /> <strong> In search of a "Tattoo shop near me"? There's nowhere else to look.</strong>
             </p>
           </div>
         </div>
