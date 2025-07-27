@@ -17,7 +17,7 @@ html, body, #root {
   flex-direction: column;
   justify-content: start;
   align-content: center;
-  color: white;
+  color: #F0B205;
   overflow: hidden;
 }
 
@@ -32,27 +32,36 @@ html, body, #root {
 .hero-content {
   z-index: 2;
   text-align: center;
+  justify-content: center;
   margin: 0 auto;
-  padding: 8rem 1rem 0 1rem;
-  max-width: 100%;
+  padding: 10rem 1rem 0 1rem;
+  max-width: 80%;
+  display: flex;             
+  justify-content: center;  
+  flex-wrap: wrap;
 }
 
 .hero-content h1 {
   font-family:'Times New Roman', Times, serif ;
   font-size: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.hero-content h1 span{
+  background-image: linear-gradient(to right, #E3980A 10%, #F0B205);
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  max-width: 600px;
+  color: #ffe372;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-content button {
-  display: inline;
   padding: 0.75rem 1rem;
   background-color: transparent;
   color: white;
@@ -166,11 +175,12 @@ html, body, #root {
   .hero-content h1 {
   font-size: 3rem;
   padding: 0 1rem;
-  background-color: #A19280;
+  background-color: rgb(245, 245, 220,0.8);
 }
 
   .hero-content p {
     font-size: 1.1rem;
+    display:none;
   }
 
   .hero-content button {

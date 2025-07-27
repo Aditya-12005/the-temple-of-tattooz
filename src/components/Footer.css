@@ -15,12 +15,15 @@
 
 .end-content-box h3 {
   font-size: 1.3rem;
+  background-image: linear-gradient(to right, #E3980A, #F0B205);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 0.7rem;
   padding-bottom: 0.3rem;
 }
 .end-content-box h4 {
   font-size: 1.1rem;
-  color: white;
+  color: #F0B205;
   margin: 0.7rem 0;
   padding-bottom: 0.3rem;
 }
@@ -34,7 +37,7 @@
 }
 
 .end-content-box a{
-    color: white;
+    color: #ffcc00;
     margin: 0.75rem 0;
     font-size:0.95rem;
     text-decoration: underline;
@@ -43,7 +46,7 @@
 .end-content-box p {
   font-size: 0.95rem;
   margin: 0.75rem 0;
-  color: white;
+  color: #ffcc00;
   line-height: 1.5;
 }
 

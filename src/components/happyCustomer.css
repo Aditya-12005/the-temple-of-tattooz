@@ -9,8 +9,9 @@
 
 .image-slider-container h2 {
   font-size: 3rem;
-  font-family: 'Calgary', serif;
+  font-family: 'Times New Roman', Times, serif;
   background-image: linear-gradient(to right, #1e1e1e ,#1a1a1a );
+  color: #F0B205;
   text-shadow: 1px -1px 2px #F0B205;
   border-radius: 10px;
   margin: 0 2rem 2rem 2rem;
@@ -25,7 +26,7 @@
 }
 
 .slider-image-wrapper {
-  flex: 0 0 250px; /* ✅ Fixed width per image */
+  flex: 0 0 250px; 
   margin: 0 10px;
   opacity: 0.4;
   transform: scale(0.9);

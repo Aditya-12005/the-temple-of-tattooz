@@ -8,6 +8,7 @@ import piercing from '../data/piercings.js';
 import smppmu from '../data/smppmu.js';  
 import tattooRemoving from '../data/tattooRemoving.js';    
 import Footer from '../components/Footer.jsx';   
+import ContactForm from '../components/ContactForm';
 
 const HomePage = () => {
   return (
@@ -15,7 +16,8 @@ const HomePage = () => {
       {/* HERO SECTION */}
       <div className="homepage-container">
         <div className="hero-content">
-           <h1>The Temple Of Tattooz</h1>
+           <h1><span>The</span><span>  Temple </span><span> Of </span><span> Tattooz</span></h1>
+           <p> Whether you're searching for elaborate patterns, striking statements, or significant symbols, The Temple of Tattooz has what you need.</p>
         </div>
       </div>
 
@@ -46,7 +48,7 @@ const HomePage = () => {
         <GallerySection title="Piercings" images={piercing} />
         <GallerySection title="SMP-PMU" images={smppmu} />
         <GallerySection title="Tattoo Removing" images={tattooRemoving} />
-        
+      <ContactForm/>
       <Footer/>
 
       
