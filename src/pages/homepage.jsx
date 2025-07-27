@@ -19,7 +19,6 @@ const HomePage = () => {
       <div className="homepage-container">
         <div className="hero-content">
            <h1><span>The</span><span>  Temple </span><span> Of </span><span> Tattooz</span></h1>
-           <p> Whether you're searching for elaborate patterns, striking statements, or significant symbols, The Temple of Tattooz has what you need.</p>
         </div>
       </div>
 
@@ -37,13 +36,16 @@ const HomePage = () => {
           <div className="info-description">
             <h2>Walk In Tattoos <br />+<br />Tattoos By Appointment</h2>
             <p>
-              The Temple of Tattoo is in the centre of Akota & the Best  place to get tattoos in Vadodara with 2 Branches first in Akota  and Second in Jubelibaugh . Being the best tattoo shop in Vadodara , we are well known for our ability to create one-of-a-kind, custom tattoo designs that fit your style. Our skilled and knowledgeable artists are committed to provide outstanding tattoo services, making sure that each work of art is painstakingly and precisely created. Whether you're searching for elaborate patterns, striking statements, or significant symbols, The Temple of Tattooz in  Vadodara studio has what you need. Experience the best tattoo art in Gujarat by coming to The Temple of Tattooz today. In search of a "tattoo shop near me"? There's nowhere else to look.
+              The Temple of Tattoo is in the centre of Akota & the Best  place to get tattoos in Vadodara with 2 Branches in Akota and Jubelibaugh . <br />Being the best tattoo shop in Vadodara , we are well known for our ability to create one-of-a-kind, custom tattoo designs that fit your style. Our skilled and knowledgeable artists are committed to provide outstanding tattoo services, making sure that each work of art is painstakingly and precisely created. <br /><br /> <strong> In search of a "tattoo shop near me"? There's nowhere else to look.</strong>
             </p>
           </div>
         </div>
       </div>
       <ImageSlider />
-
+      <p className='mid-description'> Whether you're searching for elaborate patterns, striking statements, or significant symbols, The Temple of Tattooz has what you need.
+        <br /><br />
+        Experience the best tattoo art in Gujarat by coming to The Temple of Tattooz today.
+      </p>
       {/* GALLERY SECTIONS */}
         
         <GallerySection title="Permanent Tattoos" images={permanentTattoos} />
