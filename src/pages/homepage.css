@@ -196,12 +196,16 @@ html, body, #root {
     flex: 1 1 100%;
   }
 
+  .info-description{
+    padding: 2rem 1rem;
+  }
+
   .info-description h2 {
     font-size: 2rem;
   }
 
   .info-description p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
