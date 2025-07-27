@@ -48,11 +48,8 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
-      console.log("Raw response:", response);
-
       const result = await response.json();
-      console.log("Parsed result:", result);
-
+      
       if (result.success) {
         setStatus('Message sent successfully!');
         setFormData({
