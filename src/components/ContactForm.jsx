@@ -48,8 +48,10 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
+      console.log("Raw response:", response);
+
       const result = await response.json();
-      console.log(response)
+      console.log("Parsed result:", result);
 
       if (result.success) {
         setStatus('Message sent successfully!');
@@ -63,7 +65,7 @@ const ContactForm = () => {
         setStatus('Failed to send message.');
       }
     } catch (err) {
-      console.error(err);
+      console.error("Error during form submission:", err);
       setStatus('Something went wrong.');
     }
   };
